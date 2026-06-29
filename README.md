@@ -4,7 +4,7 @@
 
 ## 目录结构
 
-脚本建议放在 `welive.exe` 同目录：
+脚本放在 `welive.exe` 同目录：
 
 ```text
 welive-windows-x64/
@@ -12,15 +12,6 @@ welive-windows-x64/
   Export-WeliveChat.ps1
   USAGE.md
   resources/
-```
-
-如果上传本仓库到 GitHub，可保留：
-
-```text
-README.md
-tools/
-  Export-WeliveChat.ps1
-tests/
 ```
 
 ## 前置要求
@@ -177,19 +168,3 @@ XXX_聊天记录.md
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\Export-WeliveChat.ps1 -WechatId "XXX"
 ```
-
-## 不要上传的文件
-
-不要上传以下文件到 GitHub：
-
-```gitignore
-welive.yaml
-contacts_raw.json
-*_聊天记录.md
-*.jsonl
-exports/
-media/
-logs/
-```
-
-这些文件可能包含聊天记录、联系人、密钥或本地路径。
