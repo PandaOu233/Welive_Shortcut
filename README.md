@@ -61,6 +61,25 @@ powershell -ExecutionPolicy Bypass -File .\Export-WeliveChat.ps1 -WechatId "XXX"
 
 按提示完成初始化后，脚本会继续导出联系人并生成聊天记录。
 
+### 默认位置
+
+通常位于微信PC版的数据目录下：
+
+```text
+%USERPROFILE%\Documents\xwechat_files\
+```
+
+### 快速定位方法
+
+1. 打开微信PC版，点击左下角的 **「≡」** 菜单
+2. 选择 **「设置」** → **「账号与储存」**
+3. 查看 **「存储位置」**，该路径下的 `xwechat_files` 文件夹即为目标
+
+![如何寻找 xwechat_files](./find.png)
+
+> 上图展示了如何通过微信PC版设置界面找到 `xwechat_files` 目录的完整路径。
+
+
 ## 已初始化时
 
 如果已经成功初始化过，可跳过 `welive init`：
