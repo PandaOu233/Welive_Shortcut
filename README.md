@@ -1,5 +1,5 @@
 # Welive Chat Export Helper
-
+# ⚠️ 注意：该方式可能已经失效，您可以观看插件分享页获得最新咨询！
 用于 `welive.exe` 的 PowerShell 辅助脚本。输入联系人的微信号，即 contacts JSON 中的 `alias`，自动找到对应 `username` / `wxid`，并导出该联系人的聊天记录 Markdown。
 
 ## 目录结构
